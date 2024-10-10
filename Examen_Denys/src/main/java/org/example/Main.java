@@ -7,8 +7,8 @@ public class Main {
 
         Examen examen = new Examen();
 
-        examen.ejercicio1();
-        //examen.ejercicio2();
+        //examen.ejercicio1();
+        examen.ejercicio2();
 
     }
 }

@@ -38,5 +38,32 @@ public class Examen {
 
     public void ejercicio2(){
 
+        Scanner entrada = new Scanner(System.in); //Definimos Scanner como entrada
+        System.out.println("Introduce tu nombre: "); //Mostramos introducir nombre
+        String nombre = entrada.next(); //guardamos nombre como variable de tipo string
+        System.out.println("La obra de " + nombre); //Mostramos "La obra de [nombre]
+
+        System.out.println("Introduce el ancho de la pared: "); //Pedimos el ancho de la pared
+        int anchoPared = entrada.nextInt(); //Guardamos el ancho de la pared
+        System.out.println("Introduce el largo de la pared: "); //Pedimos el largo de la pared
+        int largoPared = entrada.nextInt(); //Guardamos el largo de la pared
+        System.out.println("Introduce el ancho del azulejo: "); //Pedimos el ancho del azulejo
+        int anchoAzulejo = entrada.nextInt(); //Guardamos el ancho del azulejo
+        System.out.println("Introduce el largo del azulejo: "); //Pedimos el largo del azulejo
+        int largoAzulejo = entrada.nextInt(); //Guardamos el largo del azulejo
+
+        if (largoAzulejo == anchoAzulejo) {
+            System.out.println("ERROR, los azulejos no pueden ser cuadrados");
+        }else{
+            int areaPared = anchoPared * largoPared; //Calculamos area de la pared
+            int areaAzulejo = anchoAzulejo * largoAzulejo; //Calculamos area del azulejo
+
+            float numeroAzulejos = areaPared / areaAzulejo; //El número de azulejos que pueden entrar es el resultado de dividir el area de la pared entre el area del azulejo
+
+            System.out.println("Se necesitan " + numeroAzulejos + " Azulejos"); //Muestra el numero de azulejos que e
+        }
+
+
+
     }
 }
